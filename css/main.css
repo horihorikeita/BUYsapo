@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+  line-height: 1.67;
+}
+
+body {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+.title:before, .title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 10px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: #b3de49;
+  margin: 30px auto;
+  border-radius: 40px;
+  border: none;
+  width: 80%;
+  height: 60px;
+  color: #fff;
+  font-size: 2rem;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+.txtl {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+@media (max-width: 959px) {
+  .txtl {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 550px) {
+  .txtl {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+.txtm {
+  font-size: 4rem;
+  font-weight: bold;
+}
+@media (max-width: 959px) {
+  .txtm {
+    font-size: 3rem;
+    line-height: 5rem;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .txtm {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+.txts {
+  font-size: 2rem;
+  line-height: 6rem;
+  font-weight: 400;
+  margin-top: 40px;
+}
+@media (max-width: 959px) {
+  .txts {
+    font-size: 1.6rem;
+  }
+}
+
+.bold {
+  font-weight: 600;
+  font-family: "角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HiraKakuPro-W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", " Arial", "Helvetica", "sans-serif";
+  color: red;
+}
+
+#concept,
+#function {
+  padding: 60px 0 90px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
+@media (max-width: 959px) {
+  header {
+    height: 70px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+@media (max-width: 959px) {
+  .nav {
+    display: none;
+  }
+}
+.nav li {
+  margin-left: 20px;
+  font-size: 2rem;
+}
+.nav li:first-child {
+  margin: 0;
+}
+.nav li:hover {
+  opacity: 0.4;
+}
+
+.header-logo {
+  margin-left: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00822f;
+}
+@media (max-width: 959px) {
+  .header-logo {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .header-logo {
+    font-size: 1.4rem;
+  }
+}
+
+.eyecatch {
+  background-image: url(../img/bg_mv.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.eye-wrap {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.eye-wrap img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  z-index: 2;
+}
+
+.eye-img {
+  width: 40%;
+  min-width: 130px;
+}
+
+.eye-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60%;
+  min-width: 250px;
+  text-align: center;
+  margin-right: 20px;
+  line-height: 8rem;
+  color: #fff;
+}
+
+.catchcopy {
+  font-size: 6rem;
+  font-weight: bold;
+}
+@media (max-width: 959px) {
+  .catchcopy {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+.eye-text {
+  font-size: 2rem;
+}
+@media (max-width: 959px) {
+  .eye-text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+}
+
+.invite {
+  background-color: #e9f8ce;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+.invite-box {
+  width: 60%;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.invite-box .txtm {
+  margin-top: 30px;
+}
+
+#concept .txtl {
+  color: #937e54;
+}
+
+.concept-txt {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+#function {
+  background-color: #f6f6f6;
+}
+
+.function-item {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+@media (max-width: 959px) {
+  .function-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.function-item img {
+  width: 50%;
+  object-fit: cover;
+}
+@media (max-width: 959px) {
+  .function-item img {
+    align-items: center;
+    display: block;
+    order: -1;
+  }
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  position: relative;
+}
+@media (max-width: 959px) {
+  .item-box {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+.nm {
+  background-color: #b3de49;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0 30px;
+}
+@media (max-width: 959px) {
+  .nm {
+    width: 40px;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 1.5rem;
+  }
+}
+.nm1 {
+  left: -65%;
+  top: 18%;
+}
+@media (max-width: 959px) {
+  .nm1 {
+    top: -62%;
+    left: 14%;
+  }
+}
+.nm2 {
+  top: -3%;
+  left: 113%;
+}
+@media (max-width: 959px) {
+  .nm2 {
+    top: -111%;
+    left: 16%;
+  }
+}
+.nm3 {
+  top: -5%;
+  left: -34%;
+}
+@media (max-width: 959px) {
+  .nm3 {
+    top: -136%;
+    left: 17%;
+  }
+}
+.nm4 {
+  top: -6%;
+  left: 115%;
+}
+@media (max-width: 959px) {
+  .nm4 {
+    top: -110%;
+    left: 16%;
+  }
+}
+
+footer {
+  height: 200px;
+}
+footer .txts {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

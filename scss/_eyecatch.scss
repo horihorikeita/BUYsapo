@@ -1,0 +1,51 @@
+.eyecatch {
+  background-image: url(../img/bg_mv.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.eye-wrap {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    z-index: 2;
+  }
+}
+.eye-img {
+  width: 40%;
+  min-width: 130px;
+}
+.eye-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60%;
+  min-width: 250px;
+  text-align: center;
+  margin-right: 20px;
+  line-height: 8rem;
+  color: #fff;
+}
+.catchcopy {
+  font-size: 6rem;
+  font-weight: bold;
+  @include tab {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+.eye-text {
+  font-size: 2rem;
+  @include tab {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+}

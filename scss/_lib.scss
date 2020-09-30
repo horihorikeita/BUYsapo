@@ -1,0 +1,99 @@
+/////// mixin //////
+
+@mixin pc {
+  @media (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
+
+///////共通////////
+html {
+  font-size: 62.5%;
+  line-height: 1.67;
+}
+body {
+  text-align: center;
+}
+.title {
+  font-size: 2rem;
+  &:before,
+  &:after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 10px;
+    margin-bottom: 5px;
+  }
+}
+.btn {
+  background-color: #b3de49;
+  margin: 30px auto;
+  border-radius: 40px;
+  border: none;
+  width: 80%;
+  height: 60px;
+  color: #fff;
+  font-size: 2rem;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.txtl {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 40px;
+  @include tab {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  @include sp {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+.txtm {
+  font-size: 4rem;
+  font-weight: bold;
+  @include tab {
+    font-size: 3rem;
+    line-height: 5rem;
+    margin-top: 50px;
+  }
+  @include sp {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+.txts {
+  font-size: 2rem;
+  line-height: 6rem;
+  font-weight: 400;
+  margin-top: 40px;
+  @include tab {
+    font-size: 1.6rem;
+  }
+}
+.bold {
+  font-weight: 600;
+  font-family: "角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HiraKakuPro-W3",
+    "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", " Arial", "Helvetica",
+    "sans-serif";
+  color: red;
+}
+#concept,
+#function {
+  padding: 60px 0 90px;
+}

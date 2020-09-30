@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  @include tab {
+    height: 70px;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50px;
+  @include tab {
+    display: none;
+  }
+  li {
+    margin-left: 20px;
+    font-size: 2rem;
+    &:first-child {
+      margin: 0;
+    }
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+}
+.header-logo {
+  margin-left: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00822f;
+  @include tab {
+    font-size: 2rem;
+  }
+  @include sp {
+    font-size: 1.4rem;
+  }
+}
