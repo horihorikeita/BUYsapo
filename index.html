@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>バイサポ</title>
-    　　
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
       <h2 class="header-logo">バイサポ</h2>
       <nav>
-        <ul class="nav">
-          <li><a href="#">ホーム</a></li>
-          <li><a href="#concept">コンセプト</a></li>
-          <li><a href="#function">機能</a></li>
+        <ul class="nav nav-js">
+          <li><a class="nav-item" href="#">ホーム</a></li>
+          <li><a class="nav-item" href="#concept">コンセプト</a></li>
+          <li><a class="nav-item" href="#function">機能</a></li>
         </ul>
       </nav>
+      <button
+        class="js-nav-button nav-button"
+        aria-expanded="false"
+        aria-label="メインメニュー"
+      >
+        <span></span>
+      </button>
     </header>
 
     <div class="eyecatch">
@@ -54,7 +61,6 @@
             alt="検索"
           />
           <div class="item-box">
-            <span class="nm nm1">1</span>
             <p class="txtm">人気ワード検索</p>
 
             <p class="txts">
@@ -72,7 +78,6 @@
 
         <div class="function-item">
           <div class="item-box">
-            <span class="nm nm2">2</span>
             <p class="txtm">自動再出品</p>
             <p class="txts">
               バイサポでは、新着やおすすめに乗りやすくする為の<span class="bold"
@@ -94,7 +99,6 @@
           />
 
           <div class="item-box">
-            <span class="nm nm3">3</span>
             <p class="txtm">自動商品説明</p>
             <p class="txts">
               自分が出品したい商品のカテゴリを入力し、商品情報だけを入力すれば、<span
@@ -108,7 +112,6 @@
 
         <div class="function-item">
           <div class="item-box">
-            <span class="nm nm4">4</span>
             <p class="txtm">SOLD OUT</p>
             <p class="txts">
               これら3つの機能を使って売りましょう！！
@@ -130,5 +133,7 @@
       <p class="txts">©バイサポ</p>
       <p class="txts">TEL 000ー0000ー0000</p>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@
   margin: 0 auto;
   justify-content: center;
   img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
     border: 0;
     z-index: 2;
@@ -21,7 +21,7 @@
 }
 .eye-img {
   width: 40%;
-  min-width: 130px;
+  min-width: 100px;
 }
 .eye-box {
   display: flex;
@@ -41,11 +41,19 @@
     font-size: 3rem;
     line-height: 4rem;
   }
+  @include sp {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 .eye-text {
   font-size: 2rem;
   @include tab {
     font-size: 1.6rem;
     line-height: 3rem;
+  }
+  @include sp {
+    font-size: 1rem;
+    line-height: 2rem;
   }
 }

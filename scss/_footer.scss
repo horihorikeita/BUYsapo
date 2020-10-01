@@ -1,6 +1,15 @@
 footer {
   height: 200px;
-  .txts {
-    margin: 0;
+  @include tab {
+    height: 140px;
+  }
+  @include sp {
+    height: 80px;
+    line-height: 80px;
+    .txts {
+      margin: 0;
+      line-height: 2rem;
+      padding-top: 10px;
+    }
   }
 }
